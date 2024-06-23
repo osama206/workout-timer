@@ -91,6 +91,6 @@ This will generate optimized static files in the `build` directory, which can be
 
 - React documentation: [React](https://react.dev)
 - MDN Web Docs for JavaScript and Web APIs: [MDN Web Docs](https://developer.mozilla.org/)
-- Audio clip used for workout sounds: [ClickSound.m4a](https://freesound.org/)
+- ClickSound.m4a: Audio clip used for workout sounds from [freesound](https://freesound.org/)
 
 ---
