@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Workout Timer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Workout Timer is a React-based web application that helps you plan and time your workouts. It dynamically updates workout routines based on the time of day and provides a customizable interface for selecting different workout plans, adjusting the number of sets, speed per exercise, and break durations. The app also includes an option to toggle workout sounds on and off.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Dynamic workout plans based on the time of day (AM/PM).
+- Real-time clock updating every second.
+- Customizable workout parameters:
+  - Type of workout
+  - Number of sets
+  - Speed per exercise
+  - Break duration between sets
+- Sound toggle option to enable/disable workout sounds.
+- Duration calculation and display for the total workout.
+- Responsive UI with interactive elements.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+To run this project locally, you need to have:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js (version 14.x or higher)
+- npm (version 6.x or higher)
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/osama206/workout-timer.git
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+   ```sh
+   cd workout-timer
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install the dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```sh
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Running the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To start the application locally, run:
 
-## Learn More
+```sh
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This will start the development server, and you can view the application by navigating to `http://localhost:3000` in your web browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Building for Production
 
-### Code Splitting
+To create a production build, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm run build
+```
 
-### Analyzing the Bundle Size
+This will generate optimized static files in the `build` directory, which can be served by any static hosting service.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Project Structure
 
-### Making a Progressive Web App
+- `src/`
+  - `App.js`: Main application component.
+  - `Calculator.js`: Component for configuring and calculating workout durations.
+  - `ToggleSounds.js`: Component for toggling workout sounds.
+  - `index.js`: Entry point for the React application.
+  - `index.css`: Global CSS styles.
+  - `ClickSound.m4a`: Audio file for workout click sounds.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+### Interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Type of Workout**: Select the type of workout from the dropdown menu. The number of exercises will update accordingly.
+- **Number of Sets**: Adjust the number of sets using the range input.
+- **Speed per Exercise**: Adjust the speed per exercise in seconds using the range input.
+- **Break Duration**: Adjust the break duration between sets in minutes using the range input.
+- **Sound Toggle**: Click the sound button to toggle workout sounds on or off.
+- **Duration Display**: The total workout duration is displayed and updated dynamically.
 
-### Deployment
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- React documentation: [React](https://react.dev)
+- MDN Web Docs for JavaScript and Web APIs: [MDN Web Docs](https://developer.mozilla.org/)
+- Audio clip used for workout sounds: [ClickSound.m4a](https://freesound.org/)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
